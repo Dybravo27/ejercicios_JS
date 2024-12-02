@@ -6,32 +6,60 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+:root{
+    --azul_oscuro:#161A30;
+    --beige_claro:#F0ECE5;
+    --gris:#b1b3c9;
+}
 body{
-    background-color: #272829;
+    background-color: var(--azul_oscuro);
+}
+/* ESTILOS DEL LISTADO DE EJERCICIOS */
+.content_lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .lista{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.lista__titulo{
-    font-size: 3rem;
-}
-.lista__subtitulo{
-    font-size: 2rem;
+    width: 60%;
+    padding: 2vw;
+    gap: 10px;
 }
 .lista__item{
     list-style: none;
-    width: 10%;
-    height: 3vw;
+    background-color: var(--beige_claro);
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
+}
+.lista__item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--gris);
+    border-radius: 10px;
+    transition: width 0.3s;
+    z-index: -1;
+}
+.lista__item:hover:before{
+    width: 100%;
 }
 .lista__enlace{
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 50px;
     text-decoration: none;
+    color: var(--azul_oscuro);
+    border-radius: 5px;
 }
