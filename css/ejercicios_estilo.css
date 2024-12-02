@@ -1,0 +1,26 @@
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.contenido__titulo{
+    color: #FFF6E0;
+    font-weight: 700;
+    padding-top: 2vw;
+    font-size: 4rem;
+    text-shadow: 0 2px 2px #272829,
+    0 3px 3px #272829,
+    0 4px 4px #272829,
+    0 5px 8px #FFF6E0,
+    0 6px 9px #FFF6E0,
+    0 7px 10px #FFF6E0,
+    0 8px 11px #FFF6E0;
+}
+.contenido__texto{
+    color: #FFF6E0;
+    font-weight: 400;
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
