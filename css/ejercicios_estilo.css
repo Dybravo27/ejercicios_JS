@@ -27,6 +27,7 @@
     0 6px 9px var(--beige_claro),
     0 7px 10px var(--beige_claro),
     0 8px 11px var(--beige_claro);
+    -webkit-text-stroke: 3px var(--azul_oscuro);
 }
 .contenido__texto{
     color: var(--beige_claro);
