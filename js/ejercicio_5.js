@@ -7,10 +7,7 @@ let edad = parseInt(prompt('Ingrese su edad'));
 let ingresos = parseInt(prompt('Ingrese el total de sus ingresos mensuales: '));
 
 let impuesto = function(edad,ingresos) {
-    if (edad > 16 && ingresos >= 1000) {
-        alert('El usuario SI tiene que tributar impuestos');
-    } else {
-        alert('El usuario NO debe tributar impuestos');
-    }
+    if (edad > 16 && ingresos >= 1000) alert('El usuario SI tiene que tributar impuestos');
+    else alert('El usuario NO debe tributar impuestos');
 }
 impuesto(edad,ingresos);

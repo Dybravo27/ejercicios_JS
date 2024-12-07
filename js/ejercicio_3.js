@@ -7,7 +7,10 @@ let numero2 = parseInt(prompt('Ingrese el segundo numero'));
 
 const division = function(numero1,numero2) {
     try {
-        if (numero1 === 0 || numero2 === 0) {
+        if (numero1 === null || numero2 === null) {
+            throw new Error("Error: ambos valores deben ser números válidos.");
+        }
+        if (numero2 === 0) {
             throw new Error("Error no se puede dividir entre cero");
         }
         else{
