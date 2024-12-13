@@ -2,7 +2,7 @@
 // caracteres, y al menos una mayúscula, una minúscula, y un dígito
 
 let contrasena = prompt('Ingrese una contraseña');
-let regex = /^.{8,12}[a-z]{1}[A-Z]{1}$/;
+let regex = /^(?=[A-Za-z\d]{8,12}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/;
 
 function fortale_contra() {
     if (regex.test(contrasena)) {

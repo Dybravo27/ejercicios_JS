@@ -7,7 +7,7 @@ if (!isNaN(numero) && numero > 0) {
     for (let i = 1; i <= numero; i++) {
         resultados.push('*'.repeat(i));
     }
-    alert(resultados.join('\n'));
+    console.log(resultados.join('\n'));
 } else {
     alert('Error ingrese datos validos');
 }
