@@ -14,7 +14,6 @@ function obtener_mayor(arreglo) {
     return mayor;
 }
 
-// Ejemplo de uso
 let numeros = [3, 7, 2, 5, 9, 1];
 let mayor_elemento = obtener_mayor(numeros);
 console.log("El mayor elemento del arreglo es: " + mayor_elemento);
