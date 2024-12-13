@@ -1,0 +1,41 @@
+/* ESTILOS DE LOS ENUNCIADOS DE CADA EJERCICIO */
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.seccion--tamano_alto{
+    height: 0%;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+}
+.contenido__titulo{
+    color: var(--beige_claro);
+    font-weight: 700;
+    font-size: 4rem;
+    text-shadow: 0 2px 2px var(--azul_oscuro),
+    0 3px 3px var(--azul_oscuro),
+    0 4px 4px var(--azul_oscuro),
+    0 5px 8px var(--beige_claro),
+    0 6px 9px var(--beige_claro),
+    0 7px 10px var(--beige_claro),
+    0 8px 11px var(--beige_claro);
+    -webkit-text-stroke: 3px var(--azul_oscuro);
+}
+.contenido__texto{
+    color: var(--beige_claro);
+    padding-top: 2vh;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.contenido__texto--tamano_letra{
+    font-size: 2rem;
+}
